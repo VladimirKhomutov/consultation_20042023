@@ -26,7 +26,7 @@ class VkTools():
                      }
         return user_info
     
-    def serch_users(self, params):
+    def search_users(self, params):
 
         sex = 1 if params['sex'] == 2 else 2
         city = params['city']
