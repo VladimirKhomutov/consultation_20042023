@@ -35,7 +35,7 @@ class BotInterface():
                     self.params = self.api.get_profile_info(event.user_id)
                     self.message_send(event.user_id, f'здравствуй {self.params["name"]}')
                 elif command == 'поиск':
-                    users = self.api.serch_users(self.params)
+                    users = self.api.search_users(self.params)
                     user = users.pop()
                     #здесь логика дял проверки бд
                     photos_user = self.api.get_photos(user['id'])                  
